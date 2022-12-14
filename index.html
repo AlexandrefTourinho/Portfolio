@@ -19,14 +19,15 @@
     </div>
     <div class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Port<span>fólio</span></a></div>
+            <div class="logo"><a href="https://github.com/AlexandrefTourinho">
+                <img class="github-image" src="/img/github.png" alt="github">Git<span>Hub</span></a></div>
             <ul class="menu">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Objetivo</a></li>
-                <li><a href="#skills">Experiência</a></li>
-                <li><a href="#objective">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#home" onclick="menuToggle()">Inicio</a></li>
+                <li><a href="#about" onclick="menuToggle()">Sobre</a></li>
+                <li><a href="#services" onclick="menuToggle()">Objetivo</a></li>
+                <li><a href="#skills" onclick="menuToggle()">Experiência</a></li>
+                <li><a href="#objective" onclick="menuToggle()">Projetos</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contato</a></li>
             </ul>
             <div class="menu-btn">
                 <ion-icon name="menu-outline"></ion-icon>
@@ -65,13 +66,11 @@
                     <br>
 
                     <ul>
-
                         <li>Compromisso com o auto desenvolvimento, passando pró ativo, usando a
                             criatividade na solução de problemas </li><br>
                         <li>Flexibilidade fácil adaptação em diversas áreas da empresa; </li><br>
                         <li>Desenvoltura em trabalhos sobre pressão; </li><br>
                         <li>Responsável, dinâmico, honesto e ético, nas decisões e ações </li><br>
-
                     </ul>
 
 
@@ -136,7 +135,6 @@
                 <div class="column left">
                     <div class="text">Formação Acadêmica e Cursos Complementares</div>
                     <ul>
-
                         <li>Graduação - Análise e Desenvolvimento de Sistemas - Universidade Estácio de Sá,
                             Florianópolis-SC - Formação 2024</li><br>
                         <li>Instituto educacional Santo Antonio - 2°grau - 2007 </li><br>
@@ -274,34 +272,43 @@
                         Edelzia Oliveira.</p>
 
                     <div class="icons">
-                        <div class="row">
-                            <ion-icon name="person-outline"></ion-icon>
-                            <div class="info">
-                                <div class="head">Nome</div>
-                                <div class="sub-title">Alexandre F. Tourinho</div>
+                        <a href="https://www.linkedin.com/in/alexandre-francisco-tourinho/" target="_blank">
+                            <div class="row">
+                                <ion-icon name="person-outline"></ion-icon>
+                                <div class="info">
+                                    <div class="head">Linkedin</div>
+                                    <div class="sub-title">Alexandre Francisco Tourinho</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <ion-icon name="call-outline"></ion-icon>
-                            <div class="info">
-                                <div class="head">Watss</div>
-                                <div class="sub-title">48 99197-9264</div>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=48991979264" target="_blank">
+                            <div class="row">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <div class="info">
+                                    <div class="head">Watss</div>
+                                    <div class="sub-title">48 99197-9264</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <ion-icon name="earth-outline"></ion-icon>
-                            <div class="info">
-                                <div class="head">Endereço</div>
-                                <div class="sub-title">Sv. Almeida, 322, Florianópolis-SC</div>
+                        </a>
+                        <a href="https://www.google.com/maps/place/Monte+Verde,+Florian%C3%B3polis+-+SC"
+                            target="_blank">
+                            <div class="row">
+                                <ion-icon name="earth-outline"></ion-icon>
+                                <div class="info">
+                                    <div class="head">Endereço</div>
+                                    <div class="sub-title">Monte Verde, Florianópolis - SC</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <ion-icon name="person-outline"></ion-icon>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">Pointcarfloripa94@gmail.com</div>
+                        </a>
+                        <a href="mailto:alexandreftourinho@gmail.com" target="_blank">
+                            <div class="row">
+                                <ion-icon name="person-outline"></ion-icon>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">alexandreftourinho@gmail.com</div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <!--column left-->
@@ -347,6 +354,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script>
+        const menu = document.querySelector('.menu')
+
+        const menuToggle = () => {
+            menu.classList.toggle('active')
+        }
+    </script>
 
 </body>
 
